@@ -1,0 +1,46 @@
+{
+  "name": "@knighted/dump",
+  "version": "1.0.0",
+  "description": "Wrapper around util.inspect to dump your nested objects to the console.",
+  "type": "module",
+  "main": "dump.js",
+  "exports": {
+    ".": {
+      "import": "./dist/dump.js",
+      "require": "./dist/dump.cjs",
+      "default": "./dist/dump.js"
+    }
+  },
+  "engines": {
+    "node": ">=12.20.0"
+  },
+  "engineStrict": true,
+  "scripts": {
+    "build": "babel-dual-package dump.js"
+  },
+  "keywords": [
+    "node",
+    "log",
+    "object",
+    "util.inspect",
+    "dump"
+  ],
+  "author": "KCM <knightedcodemonkey@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/knightedcodemonkey/dump.git"
+  },
+  "bugs": {
+    "url": "https://github.com/knightedcodemonkey/dump/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dump.js"
+  ],
+  "devDependencies": {
+    "babel-dual-package": "^1.0.0-alpha.3"
+  }
+}
