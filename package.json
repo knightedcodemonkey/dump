@@ -16,7 +16,8 @@
   },
   "engineStrict": true,
   "scripts": {
-    "build": "babel-dual-package dump.js"
+    "build": "babel-dual-package dump.js",
+    "prepack": "npm run build"
   },
   "keywords": [
     "node",
