@@ -1,13 +1,13 @@
 {
   "name": "@knighted/dump",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Wrapper around util.inspect to dump your nested objects to the console.",
   "type": "module",
   "main": "dist",
   "exports": {
     ".": {
       "import": "./dist/dump.js",
-      "require": "./dist/dump.cjs",
+      "require": "./dist/cjs/dump.cjs",
       "default": "./dist/dump.js"
     }
   },
