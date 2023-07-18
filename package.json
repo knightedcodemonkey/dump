@@ -1,9 +1,9 @@
 {
   "name": "@knighted/dump",
-  "version": "1.0.0-rc.0",
+  "version": "1.0.0",
   "description": "Wrapper around util.inspect to dump your nested objects to the console.",
   "type": "module",
-  "main": "dump.js",
+  "main": "dist",
   "exports": {
     ".": {
       "import": "./dist/dump.js",
@@ -38,7 +38,7 @@
     "access": "public"
   },
   "files": [
-    "dump.js"
+    "dist"
   ],
   "devDependencies": {
     "babel-dual-package": "^1.0.0-alpha.3"
