@@ -23,6 +23,8 @@ jobs:
         with:
           name: npm-debug-log-${{ hashFiles('package-lock.json') }}
           path: npm-debug.log
+      - name: Test
+        run: npm test
       - name: Pack
         run: npm pack
       - name: Push to NPM registry
