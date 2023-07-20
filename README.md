@@ -11,24 +11,40 @@ Wrapper around Node's `util.inpsect` to dump your nested objects to the console.
 import { dump } from '@knighted/dump'
 
 const nested = {
-  obj: {
-    nested: {
-      prop: 'value'
+  knighted: {
+    code: {
+      monkey: {
+        bananas: true
+      }
     }
   }
 }
 
-dump({ obj: nested, prefix: 'nested' })
+dump({
+  obj: nested,
+  prefix: 'prefix',
+  opts: { depth: 3, colors: true }
+})
 ```
 
 Output:
 
 ```
-nested { obj: { nested: { prop: 'value' } } }
+prefix {
+  knighted: { code: { monkey: { bananas: true } } }
+}
+```
+
+Or simply use `dump.log` if not passing `opts`.
+
+```js
+dump.log(nested, 'prefix') // Same output as above
 ```
 
 ## Options
 
 * `obj` The object to dump
 * `prefix` Helpful hint prefixed to the dump
-* `options` Same as https://nodejs.org/api/util.html#utilinspectobject-options
+* `opts` Same as https://nodejs.org/api/util.html#utilinspectobject-options
+
+`dump.log(obj)` uses `until.inspect(obj, false, null, true)`.

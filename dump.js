@@ -12,7 +12,7 @@ const defaultOpts = {
   compact: 3,
   sorted: true,
   getters: false,
-  numericSeparator: false
+  numericSeparator: false,
 }
 const dump = ({ obj = {}, opts = {}, prefix = '' }) => {
   if (Object.keys(opts).length) {
@@ -20,6 +20,10 @@ const dump = ({ obj = {}, opts = {}, prefix = '' }) => {
   } else {
     console.log(prefix, inspect(obj, false, null, true))
   }
+}
+
+dump.log = (obj, prefix = '') => {
+  dump({ obj, prefix })
 }
 
 export { dump }
