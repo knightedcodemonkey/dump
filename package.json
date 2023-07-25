@@ -1,6 +1,6 @@
 {
   "name": "@knighted/dump",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Wrapper around util.inspect to dump your nested objects to the console.",
   "type": "module",
   "main": "dist",
