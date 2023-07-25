@@ -1,6 +1,6 @@
 # [`@knighted/dump`](https://www.npmjs.com/package/@knighted/dump)
 
-![CI](https://github.com/morganney/babel-dual-package/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/knightedcodemonkey/dump/actions/workflows/ci.yml/badge.svg)
 [![NPM version](https://img.shields.io/npm/v/@knighted/dump.svg)](https://www.npmjs.com/package/@knighted/dump)
 
 Wrapper around Node's `util.inpsect` to dump your nested objects to the console.
